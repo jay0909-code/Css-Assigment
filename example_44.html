@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        #header .container .row {
+            display: flex;
+        }
+
+        .row .col {
+            width: 50%;
+        }
+
+        .header-ul {
+            list-style: none;
+
+        }
+
+        .header-ul li {
+            display: inline-block;
+            padding: 20px;
+            /* margin-left:20px; */
+        }
+
+        .li-login {
+            margin-left: 0px;
+        }
+
+        .li-content {
+            width: 100%;
+            height: 40px;
+            border: 2px solid;
+            /* padding: 10px; */
+            text-align: center;
+            padding-right: 10px;
+            padding-top: 10px;
+            background: #794CFF;
+
+        }
+
+        .samll-content {
+            display: flex;
+            text-align: center;
+            margin-left: 700px;
+            /* overflow: hidden; */
+            margin-top: 20px;
+            width: 50%;
+            text-align: center;
+        }
+
+        .save {
+            height: 20px;
+            width: 80px;
+            border: 2px solid;
+            border-radius: 32px;
+            /* border-bottom-left-radius: 32px;  */
+            padding: 15px; 
+            transform: translateY(-5px);
+            background-color: greenyellow;
+            z-index: 1; 
+        }
+
+        .account {
+            /* margin-left: 10px; */
+            height: 20px;
+            /* width: 100px; */
+            padding: 10px;
+            border: 2px solid;
+            border-top-right-radius: 32px;
+            border-bottom-right-radius: 32px;
+            padding-left: 10px;
+            margin-left: 5px;
+            margin-bottom: 200px;
+            transform: translateY(50px);
+            transform: translateX(-15px);
+            background-color: lightgreen;
+
+        }
+
+        .h2-header {
+            text-align: center;
+            font-size: 50px;
+            width: 60%;
+            margin-left: 300px;
+            margin-bottom: 100px;
+            margin-top: 0;
+        }
+        input{
+            margin-top: 10px;
+            padding: 10px;
+            width: 20%;
+        }
+        button{
+            margin-top: 10px;
+
+            padding: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: #794CFF;
+            /* width: 20%; */
+
+        }
+
+        .main-img {
+            margin-left: 200px;
+        }
+
+        .foot-content .foot-p {
+            text-align: center;
+            /* font-weight: 700px; */
+            font-size: larger;
+        }
+
+        .icon-content {
+            display: flex;
+            margin-left: 400px;
+            margin-top: 30px;
+        }
+
+        .img-icon {
+            padding: 50px;
+            /* background: 100% 100%; */
+            /* width: 100%; */
+            /* height: 100px; */
+
+        }
+
+        /* HEADER END */
+        /* SECTION1 START */
+
+        #sect-1 {
+            text-align: center;
+        }
+
+        .sect1-maincontent {
+            display: flex;
+            /* margin: 0 auto; */
+            /* margin-left: 500px; */
+            margin-left: 100px;
+        }
+
+        .img2-content {
+            padding: 100px;
+        }
+
+        .survey1 {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            /* padding: 30px; */
+        }
+
+        .sect1-p {
+            width: 59%;
+            margin-left: 120px;
+            margin-top: 20px;
+        }
+
+        /* SECTION1 END */
+        /* SECTION2 START */
+
+        #sect-2 {
+            padding: 30px;
+            margin-left: 100px;
+        }
+
+        #sect-2 .row .col1 {
+            display: flex;
+            margin: 50px auto;
+
+
+        }
+
+
+        .col {
+            width: 33.3%;
+        }
+
+        .sect2-p {
+            width: 70%;
+        }
+
+        .col1{
+            margin-left: 250px;
+        }
+
+        .col2 {
+            display: flex;
+        }
+
+        .col2 .col {
+            margin-top: 30px;
+        }
+
+
+        .sect2-h2 {
+            text-align: center;
+        }
+
+
+        /* SECTION2 END */
+
+        /* SECTION3 START */
+
+        #sect-3 {
+            padding: 50px;
+        }
+
+        #sect-3 .row {
+            display: flex;
+        }
+
+
+        .col-sect3 {
+            width: 50%;
+            text-align: center;
+        }
+
+        .sect3-h2 {
+            width: 50%;
+            padding: 30px;
+        }
+
+        .sect3-p {
+            width: 50%;
+            padding: 30px;
+            font-weight: 400px;
+
+        }
+
+        .sect3-btn {
+            margin-top: 20px;
+            margin-right: 300px;
+            padding: 10px;
+            background-color: #796EFF;
+
+        }
+
+
+        /* SECTION3 END */
+
+        /* SECTION4 START */
+
+        #sect-4 {
+            padding: 50px;
+        }
+
+        .sect4-maincontent {
+            text-align: center;
+            margin-left: 500px;
+        }
+
+        .sect4-h2 {
+            width: 30%;
+            /* text-align: center; */
+            padding: 20px;
+            margin-left: 20px
+        }
+
+        .sect4-p {
+            width: 43%;
+            /* text-align: center; */
+            padding: 20px;
+            margin-right: 20px;
+        }
+
+        .row-sect4 {
+            display: flex;
+            /* text-align: center; */
+            /* align-items: center; */
+            margin-left: 50px;
+            padding: 30px;
+        }
+
+        .col-sect4 {
+            width: 33.3%;
+            display: flex;
+            text-align: center;
+            margin-left: 50px;
+
+        }
+
+        .rect-row {
+            border: 2px solid;
+            width: 1110px;
+            background-color: #794CFF;
+            display: flex;
+            /* padding: 20px; */
+            border-radius: 12px;
+            margin-left: 15px;
+            margin-top: 20px;
+        }
+
+        .rect-col {
+            width: 50%;
+            text-align: center;
+
+            color: white;
+
+        }
+
+        .rect-p {
+            width: 70%;
+            font-weight: 600px;
+            margin-left: 50px;
+            padding: 30px;
+            font-size: xx-large;
+        }
+
+        .rect2-row {
+            display: flex;
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+
+
+        .apple {
+            margin-left: 20px;
+        }
+
+        /* SECTION4 END */
+
+        /* FOOTER START */
+
+        #footer {
+            background-color: #1D2830;
+            padding: 30px;
+        }
+
+
+        .row-footer {
+            display: flex;
+            /* color: white; */
+        }
+
+        .col-footer {
+            width: 25%;
+            color: white;
+            padding: 30px;
+        }
+
+        .footer-h2 {
+            margin-left: 20px;
+        }
+
+        .footer-ul {
+            list-style: none;
+            padding: 25px;
+            /* margin-right: 150px; */
+        }
+
+        .footer-li {
+            padding: 10px;
+            /* margin-right: 100px; */
+            width: 100%;
+        }
+
+        .rowf-content {
+            display: flex;
+        }
+
+        .colf-content {
+            color: white;
+            width: 50%;
+            padding: 10px;
+        }
+
+        .colf-content2 {
+            width: 50%;
+            color: white;
+            display: flex;
+            margin-left: 800px;
+        }
+        .icon{
+            padding: 15px;
+        }
+        .icon a{
+            color: white;
+
+        }
+
+        /* FOOTER END */
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 class="header-h2">team flow</h2>
+                </div>
+                <div class="col">
+                    <ul class="header-ul">
+                        <li>How it Work</li>
+                        <li>Product</li>
+                        <li>Pricing</li>
+                        <li>Resources</li>
+                        <li class="li-login">Log in</li>
+                        <li>
+                            <div class="li-content">
+                                Get Started free
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="samll-content">
+                <div class="save">
+                    Save 90%
+                </div>
+                <div class="account">
+                    Get account $59
+                </div>
+
+            </div>
+            <div class="big-content">
+                <div class="h2-header">
+                    <h2>Manage the team everyone want to be on</h2>
+                    <p class="p-header">Simple platform that lets you master what great managers do best,
+                        as develop trust, collaborate, and drive team performance.</p>
+                    <input type="text" name="" id="" placeholder="name@yourcompany.com"><button>Try it free</button>
+                </div>
+            </div>
+            <div class="main-img">
+                <img src="/images/Graph 2 1.png" alt="">
+            </div>
+            <div class="foot-content">
+                <p class="foot-p">TRUSTED BY OVER 10.000+ WORLD’S BEST TEAMS</p>
+
+                <div class="icon-content">
+                    <div class="img-icon">
+                        <img src="/images/google-2015a 1.png" alt="">
+                    </div>
+                    <div class="img-icon">
+                        <img src="/images/airbnb 1.png" alt="">
+                    </div>
+                    <div class="img-icon">
+                        <img src="/images/Group.png" alt="">
+                    </div>
+                    <div class="img-icon">
+                        <img src="/images/hubspot 1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="sect-1">
+        <div class="container">
+            <div class="sect1-maincontent">
+                <div class="img2-content">
+                    <img src="/images/Group 25 1.png" alt="">
+                </div>
+                <div class="sect1-maincontent2">
+                    <div class="survey">
+
+                        <div class="survey1">
+                            <h2 class="sect1-h2">Survey your team</h2>
+
+                            <p class="sect1-p">Powerful questions that get to the heart of how team members really feel.
+                            </p>
+                        </div>
+
+                        <hr>
+
+                        <div class="survey1">
+                            <h2 class="sect1-h2">Resolve issues quickly</h2>
+
+                            <p class="sect1-p">Anonymous messaging that connects managers and employees.
+                            </p>
+                        </div>
+
+                        <hr>
+
+                        <div class="survey1">
+                            <h2 class="sect1-h2">Track your progress</h2>
+
+                            <p class="sect1-p">Easy-to-read reports and sharable results help managers and teams.
+                            </p>
+                        </div>
+
+                        <hr>
+
+                        <div class="survey1">
+                            <h2 class="sect1-h2">Survey your team</h2>
+
+                            <p class="sect1-p">Powerful questions that get to the heart of how team members really feel.
+                            </p>
+                        </div>
+
+                        <hr>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="sect-2">
+        <div class="container">
+            <div class="row">
+
+                <h2 class="sect2-h2">Make your work easier</h2>
+                <div class="col1">
+                    <div class="col">
+
+                        <div class="sect-maincontent">
+                            <img src="/images/Group 21.png" alt="">
+
+                            <h2>Team Surveys & Reports</h2>
+
+                            <p class="sect2-p">Short, anonymous surveys track your team’s needs weekly so you can focus.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="col">
+                        <div class="sect-maincontent">
+                            <img src="/images/Group 19.png" alt="">
+
+                            <h2>Collaborative 1:1 </h2>
+
+                            <p class="sect2-p">Build relationships by planning
+                                1-on-1s and start meetings.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="sect-maincontent">
+                            <img src="/images/Group 20.png" alt="">
+
+                            <h2>Learning Center</h2>
+
+                            <p class="sect2-p">Quickly get solutions tailored to your personal challenges from the
+                                manager.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col2">
+                    <div class="col">
+                        <div class="sect-maincontent">
+                            <img src="/images/Group 22.png" alt="">
+
+                            <h2>Anonymous Messaging</h2>
+
+                            <p class="sect2-p">Develop trust in a safe channel for important conversations.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="sect-maincontent">
+                            <img src="/images/Group 23.png" alt="">
+
+                            <h2>Conversation Engine</h2>
+
+                            <p class="sect2-p">Communicate confidently with
+                                recommended talking points.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="sect-maincontent">
+                            <img src="/images/Group 24.png" alt="">
+
+                            <h2>Exclusives Manager</h2>
+
+                            <p class="sect2-p">Access manager tips, activities and
+                                best practices from our team of experts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sect-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-sect3">
+                    <h2 class="sect3-h2">We work how you
+                        work everyday</h2>
+                    <p class="sect3-p">Since the easiest things to use actually get used, we adapts to the way your team
+                        works – not the other way around.</p>
+                    <button class="sect3-btn">Get Started Free</button>
+                </div>
+                <div class="col-sect3">
+                    <img src="/images/Group 26.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="sect-4">
+        <div class="container">
+            <div class="sect4maincontent">
+                <div class="sect4-maincontent">
+                    <h2 class="sect4-h2">Why customers love
+                        working with us</h2>
+                    <p class="sect4-p">“It's amazing what has helped me learn about my team.
+                        I don't worry about blindspots anymore, and 1-on-1s have never
+                        been more productive. The team loves it.”</p>
+                </div>
+                <div class="row-sect4">
+                    <div class="col-sect4">
+                        <div class="img">
+                            <img src="/images/Ellipse 5.png" alt="">
+                        </div>
+                        <div class="sect4content">
+                            <div class="name">
+                                <h2>Jorge Robertson</h2>
+
+                            </div>
+                            <div class="work">
+                                <p>CS at Google</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sect4">
+                        <div class="img">
+                            <img src="/images/Ellipse 6.png" alt="">
+                        </div>
+                        <div class="sect4content">
+                            <div class="name">
+                                <h2>Francisco Bell</h2>
+
+                            </div>
+                            <div class="work">
+                                <p>Designer at Microsoft</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sect4">
+                        <div class="img">
+                            <img src="/images/Ellipse 7.png" alt="">
+                        </div>
+                        <div class="sect4content">
+                            <div class="name">
+                                <h2>Beth Fox</h2>
+
+                            </div>
+                            <div class="work">
+                                <p>Developer at Airbnb</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rect-row">
+                    <div class="rect-col">
+                        <p class="rect-p">84% of employees who use
+                            trust their direct manager</p>
+                    </div>
+                    <div class="rect-col">
+                        <div class="rect2-row">
+                            <div class="gp">
+                                <img src="/images/google-play-badge 1.png" alt="">
+                            </div>
+                            <div class="apple">
+                                <img src="/images/Group.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container">
+            <div class="row-footer">
+                <div class="col-footer">
+                    <h2 class="footer-h2">Company</h2>
+                    <ul class="footer-ul">
+                        <li class="footer-li">About US</li>
+                        <li class="footer-li">Blog</li>
+                        <li class="footer-li">Careers</li>
+                        <li class="footer-li">Contact Us</li>
+                    </ul>
+                </div>
+                <div class="col-footer">
+
+                    <h2 class="footer-h2">Support</h2>
+                    <ul class="footer-ul">
+                        <li class="footer-li">Help Center</li>
+                        <li class="footer-li">Safety Center</li>
+                        <li class="footer-li">Community</li>
+
+                    </ul>
+                </div>
+                <div class="col-footer">
+
+                    <h2 class="footer-h2">Legal</h2>
+                    <ul class="footer-ul">
+                        <li class="footer-li">Cookies Policy</li>
+                        <li class="footer-li">Privacy Policy</li>
+                        <li class="footer-li">Terms of Service</li>
+
+                    </ul>
+                </div>
+                <div class="col-footer">
+
+                    <h2 class="footer-h2">Install App</h2>
+                    <ul class="footer-ul">
+                        <li class="footer-li"><img src="/images/google-play-badge 1.png" alt=""></li>
+                        <li class="footer-li"><img src="/images/Group.png" alt=""></li>
+
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-content">
+                <div class="rowf-content">
+                    <div class="colf-content">
+                        <p>© 2020 - All rights reserved</p>
+                    </div>
+                    <div class="colf-content2">
+                        <div class="icon">
+                            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href=""><i class="fa-solid fa-basketball"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                        <div class="icon">
+                            <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
